@@ -200,7 +200,7 @@
     <div class="top-nav">
         <a href="#" class="brand"><i class="fas fa-university"></i>University Portal</a>
         <div class="nav-btns">
-            <a href="auth/login.php" class="btn-outline-light-custom">Sign In</a>
+            <a href="auth/login.php" class="btn-outline-light-custom">Login</a>
             <a href="auth/register.php" class="btn-white">Register</a>
         </div>
     </div>
@@ -212,7 +212,7 @@
             <p>Access grades, attendance, and messages for students, parents, and teachers — anytime, anywhere.</p>
             <div class="hero-btns">
                 <a href="auth/register.php" class="btn-get-started"><i class="fas fa-user-plus me-2"></i>Get Started</a>
-                <a href="auth/login.php" class="btn-sign-in"><i class="fas fa-sign-in-alt me-2"></i>Sign In</a>
+                <a href="auth/login.php" class="btn-sign-in"><i class="fas fa-sign-in-alt me-2"></i>Login</a>
             </div>
         </div>
     </div>

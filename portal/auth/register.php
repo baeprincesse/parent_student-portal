@@ -183,7 +183,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 </div>
                 <div class="card-footer text-center py-3">
-                    Already have an account? <a href="login.php" class="text-primary fw-semibold">Sign In</a>
+                    Already have an account? <a href="login.php" class="text-primary fw-semibold">Login</a>
                 </div>
             </div>
         </div>
