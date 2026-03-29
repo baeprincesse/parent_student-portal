@@ -16,8 +16,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'];
     $confirm  = $_POST['confirm_password'];
 
-    // Validations
-    if (!in_array($role, ['student', 'teacher', 'parent'])) {
+    // Validations - admin role is strictly forbidden from self-registration
+    if (!in_array($role, ['student', 'teacher', 'parent']) || $role === 'admin') {
         $error = 'Invalid role selected.';
     } elseif (strlen($password) < 6) {
         $error = 'Password must be at least 6 characters.';
@@ -126,6 +126,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </div>
                             <input type="hidden" name="role" id="roleInput" value="<?= isset($_POST['role']) ? $_POST['role'] : '' ?>" required>
                             <div id="roleError" class="text-danger small mt-1" style="display:none">Please select a role.</div>
+                            <div class="mt-2 text-muted small"><i class="fas fa-info-circle me-1"></i>Admin accounts can only be created by the system administrator.</div>
                         </div>
 
                         <!-- Full Name -->
