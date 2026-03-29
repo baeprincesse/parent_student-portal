@@ -80,7 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </div>
                         </div>
                         <button type="submit" class="btn btn-login btn-primary w-100 py-2 text-white fw-semibold">
-                            <i class="fas fa-sign-in-alt me-2"></i>Sign In
+                            <i class="fas fa-sign-in-alt me-2"></i>Login
                         </button>
                     </form>
                 </div>
